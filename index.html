@@ -42,6 +42,26 @@
 		color: teal;
 		margin-left:25px;
 	}
+	.img__description {
+  	position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	background: rgba(170, 165, 165, 0.72);
+  	color: #fff;
+  	visibility: hidden;
+  	opacity: 0;
+  }
+  .img__wrap {
+  position: relative;
+  height: 100px;
+  width: 100px;
+}
+  .img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
 
 </style>
 <head>
@@ -53,7 +73,10 @@
 </div>
 <h2>Games</h2>
 <div id = "gameArea">
-	<a href = "game_fldr"><img src = "icon.png" alt = "here"></a>
+	<div class = "img__wrap">
+	<a href = "game_fldr"><img src = "icon.png" alt = "here">
+	<p class="img__description">Click to Play Crown Capture</p></a>
+</div>
 </div>
  <footer>
  	<p> MiniGameWrld is a platform that allows game developers to publish and monetize their games easily. <br> Developed by Ishaan Grewal <br><a href="mailto:ishaangrewal2001@gmail.com">ishaangrewal2001@gmail.com</a></p>	

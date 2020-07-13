@@ -62,7 +62,18 @@
   visibility: visible;
   opacity: 1;
 }
+.column {
+  float: left;
+  width:100px;
+  padding: 5px;
+}
 
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 </style>
 <head>
 	
@@ -73,13 +84,38 @@
 </div>
 <h2>Games</h2>
 <div id = "gameArea">
-	<div class = "img__wrap">
-	<a href = "game_fldr"><img src = "icon.png" alt = "here">
-	<p class="img__description">Click to Play Crown Capture</p></a>
+	<div class = "row">
+		<div class = "column">
+			<div class = "img__wrap">
+			<a href = "game_fldr"><img src = "icon.png" alt = "Crown Capture not available">
+			<p class="img__description">Click to Play Crown Capture</p></a>
+			</div>
+		</div>
+		<div class = "column">
+			<div class = "img__wrap">
+			<a href = "SillySnake.html"><img src = "SillySnake.png" alt = "Silly Snake not available"><p class="img__description">Click to Play Silly Snake</p></a></a> 
+			</div>
+		</div>
+		<div class = "column">
+			<div class = "img__wrap">
+			<a href = "FrogJumper.html"><img src = "FrogJumper.png" alt = "Frog Jumper not available"><p class="img__description">Click to Play Frog Jumper</p></a></a> 
+			</div>
+		</div>
+		<div class = "column">
+			<div class = "img__wrap">
+			<a href = "NinjaArenaWarrior.html"><img src = "NinjaArenaWarrior.png" alt = "Ninja Arena Warrior not available">
+			<p class="img__description">Click to Play Ninja Arena Warrior</p></a>
+			</div>
+		</div>
+		<div class = "column">
+			<div class = "img__wrap">
+			<a href = "FlapBirdGame"><img src = "FlapBird.png" alt = "Flap Bird not available">
+			<p class="img__description">Click to Play Flap Bird</p></a>
+			</div>
+		</div>
+	</div>
 </div>
-<a href = "template.html">Template</a> 
-	<a href = "FrogJumper.html">FrogJumper</a>
-</div>
+
  <footer>
  	<p> MiniGameWrld is a platform that allows game developers to publish and monetize their games easily. <br> Developed by Ishaan Grewal <br><a href="mailto:ishaangrewal2001@gmail.com">ishaangrewal2001@gmail.com</a></p>	
  </footer>

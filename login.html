@@ -50,7 +50,7 @@
 }
 </style>
 <head>
-  
+  <script data-ad-client="ca-pub-8577634337761456" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
   <div class = "header">
@@ -61,12 +61,16 @@
   <form class = "formDoc">
     <h2>Login</h2><br><br>
     <input type="text" placeholder="Email Address" required><br><br>
-    <input type="text" placeholder="Password" required><br><br>
-    <button type="submit">Log In</button><br><br>
+    <input type="password" placeholder="Password" required><br><br>
+    <button type="submit" onclick= "message()">Log In</button><br><br>
     <a href = "register.html">Don't have an account? Create one today!</a>
   </form>
 </div>
-
+<script>
+  function message(){
+    alert("Invalid email or password");
+  }
+</script>
 <!-- Insert this code before your </body> tag -->
 </body>
 </html>

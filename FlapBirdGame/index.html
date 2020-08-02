@@ -8,7 +8,7 @@
     <!-- Load custom style sheet -->
     <link rel="stylesheet" type="text/css" href="theme/love.css">
   </head>
-  <body onload = "window.scroll(0,10)">
+  <body>
     <center>
       <div>
         <h1>Flap Bird</h1>
@@ -83,7 +83,6 @@
       Module.setStatus('Downloading...');
       window.onerror = function(event) {
         // TODO: do not warn on ok events like simulating an infinite loop or exitStatus
-        window.scroll(0, 50)
         Module.setStatus('Exception thrown, see JavaScript console');
         Module.setStatus = function(text) {
           if (text) Module.printErr('[post-exception status] ' + text);
@@ -92,7 +91,7 @@
 
       var applicationLoad = function(e) {
         Love(Module);
-        window.scroll(0, 50)
+
       }
     </script>
     <script type="text/javascript" src="game.js"></script>

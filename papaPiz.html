@@ -40,6 +40,14 @@
 }
 </style>
 <head>
+	<script type="text/javascript">
+
+	function updatePlayCount(){
+		const countEl = document.getElementById('count');
+		fetch('https://api.countapi.xyz/update/minigamewrld.com_papaPiz/plays/?amount=1').then(res => res.json()).then(res => {countEl.innerHTML = "Plays : "+res.value;
+			});
+		}
+</script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174165936-1"></script>
 <script>
@@ -52,7 +60,7 @@
 
 
 </head>
-<body>
+<body onload="updatePlayCount()">
 	<div class = "header">
 	<h1>MiniGameWrld</h1><a class ="home"href = "index.html">Home</a>
 </div>
@@ -61,7 +69,8 @@
 <iframe src="https://www.primarygames.com/arcade/simulation/papaspizzeria/embed.php" width="600" height="450" scrolling="no" frameborder="0"></iframe>
 </div>
 <div id = "devName">
-	<p>Developed by:								Plays:</p>
+	<p>Developed by: PrimaryGames</p>
+	<p id ="count">0</p>
 </div>
 
 

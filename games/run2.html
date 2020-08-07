@@ -44,7 +44,7 @@
 
 	function updatePlayCount(){
 		const countEl = document.getElementById('count');
-		fetch('').then(res => res.json()).then(res => {countEl.innerHTML = "Plays : "+res.value;
+		fetch('https://api.countapi.xyz/update/minigamewrld.com_run/plays/?amount=1').then(res => res.json()).then(res => {countEl.innerHTML = "Plays : "+res.value;
 			});
 		}
 </script>
@@ -66,11 +66,11 @@
 </div>
 
 <div class = "center">
-	
+	<div align="center"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="gameObj" width="550" height="400"><param name="movie" value="http://www.ggkit.com/Content/File/10802/run_2.swf"><embed src="http://www.ggkit.com/Content/File/10802/run_2.swf" width="550" height="400"></embed></object><br><a href="http://www.ggkit.com/">More Physics-based Games</a></div>
 	
 </div>
 <div id = "devName">
-	<p>Developed by: </p>
+	<p>Developed by: Kongregate</p>
 	<p id = "count">0</p>
 </div>
 

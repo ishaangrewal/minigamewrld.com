@@ -22,10 +22,10 @@
 	}
 	.center {
   margin: auto;
-  width: 75%;
+  width: 50%;
   padding: 10px;
   background-color: black;
-		height: 650;
+	height: 480;
 }
 .home{
 	font-size: 28px;
@@ -36,7 +36,7 @@
 
 }
 #devName{
-	margin-left: 200px;
+	margin-left: 350px;
 }
 </style>
 <head>
@@ -44,7 +44,7 @@
 
 	function updatePlayCount(){
 		const countEl = document.getElementById('count');
-		fetch('https://api.countapi.xyz/update/minigamewrld.com_flapbird/plays/?amount=1').then(res => res.json()).then(res => {countEl.innerHTML = "Plays : "+res.value;
+		fetch('https://api.countapi.xyz/update/minigamewrld.com_hurdles/plays/?amount=1').then(res => res.json()).then(res => {countEl.innerHTML = "Plays : "+res.value;
 			});
 		}
 </script>
@@ -62,17 +62,17 @@
 </head>
 <body onload="updatePlayCount()">
 	<div class = "header">
-	<h1>MiniGameWrld</h1><a class ="home"href = "index.html">Home</a>
+	<h1>MiniGameWrld</h1><a class ="home"href = "../index.html">Home</a>
 </div>
-<h2>CURRENTLY ONLY COMPATIBLE WITH GOOGLE CHROME (Reload if game space is blank: may take 2-3 times)</h2>
-  <!-- Place this code where you'd like the game to appear -->
+
 <div class = "center">
-	<iframe src ="FlapBirdGame/index.html" width = "100%" height = "100%"><p>alt text</p></iframe>
+	<iframe src="https://wanted5games.com/games/html5/hurdles-new-en-s-iga-cloud/index.html?pub=10" name="cloudgames-com" width="720" height="480" frameborder="0" scrolling="no"></iframe>
+	
 </div>
 <div id = "devName">
-	<p>Developed by: <a href="#">Ishaan Grewal</a></p>
-	<p id ="count">0</p>
+	<p>Developed by: Wanted5Games</p>
+	<p id = "count">0</p>
 </div>
-<!-- Insert this code before your </body> tag -->
+
 </body>
 </html>

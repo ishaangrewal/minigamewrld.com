@@ -44,7 +44,7 @@
 
 	function updatePlayCount(){
 		const countEl = document.getElementById('count');
-		fetch('https://api.countapi.xyz/update/minigamewrld.com_funnysoccer/plays/?amount=1').then(res => res.json()).then(res => {countEl.innerHTML = "Plays : "+res.value;
+		fetch('').then(res => res.json()).then(res => {countEl.innerHTML = "Plays : "+res.value;
 			});
 		}
 </script>
@@ -62,17 +62,17 @@
 </head>
 <body onload="updatePlayCount()">
 	<div class = "header">
-	<h1>MiniGameWrld</h1><a class ="home"href = "index.html">Home</a>
+	<h1>MiniGameWrld</h1><a class ="home"href = "../index.html">Home</a>
 </div>
 
 <div class = "center">
-<iframe src="https://wanted5games.com/games/html5/funny-soccer-en-s-iga-cloud/index.html?pub=10" name="cloudgames-com" width="800" height="500" frameborder="0" scrolling="no"></iframe>
+	
+	
 </div>
 <div id = "devName">
-	<p>Developed by: Wanted5Games</p>
-	<p id ="count">0</p>
+	<p>Developed by: </p>
+	<p id = "count">0</p>
 </div>
-
 
 </body>
 </html>

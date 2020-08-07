@@ -44,7 +44,7 @@
 
 	function updatePlayCount(){
 		const countEl = document.getElementById('count');
-		fetch('').then(res => res.json()).then(res => {countEl.innerHTML = "Plays : "+res.value;
+		fetch('https://api.countapi.xyz/update/minigamewrld.com_happywheels/plays/?amount=1').then(res => res.json()).then(res => {countEl.innerHTML = "Plays : "+res.value;
 			});
 		}
 </script>
@@ -66,13 +66,11 @@
 </div>
 
 <div class = "center">
-	
-	
+	<iframe align="center" frameborder="0" allowtransparency="true"  scrolling="no" src="https://spritted.com/en/game/happy-wheels?embed" width="720px" height="480px"></iframe>
 </div>
 <div id = "devName">
-	<p>Developed by: </p>
+	<p>Developed by: Spritted.com</p>
 	<p id = "count">0</p>
 </div>
-
 </body>
 </html>

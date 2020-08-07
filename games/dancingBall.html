@@ -44,7 +44,7 @@
 
 	function updatePlayCount(){
 		const countEl = document.getElementById('count');
-		fetch('').then(res => res.json()).then(res => {countEl.innerHTML = "Plays : "+res.value;
+		fetch('https://api.countapi.xyz/update/minigamewrld.com_dancingball/plays/?amount=1').then(res => res.json()).then(res => {countEl.innerHTML = "Plays : "+res.value;
 			});
 		}
 </script>
@@ -66,13 +66,13 @@
 </div>
 
 <div class = "center">
-	
-	
+	<iframe src="https://wanted5games.com/games/html5/dancing-ball-new-en-s-iga-cloud/index.html?pub=10" name="cloudgames-com" width="725" height="485" frameborder="0" scrolling="no"></iframe>
 </div>
 <div id = "devName">
-	<p>Developed by: </p>
-	<p id = "count">0</p>
+	<p>Developed by: Wanted5Games</p>
+	<p id ="count">0</p>
 </div>
+
 
 </body>
 </html>

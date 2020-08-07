@@ -44,7 +44,7 @@
 
 	function updatePlayCount(){
 		const countEl = document.getElementById('count');
-		fetch('').then(res => res.json()).then(res => {countEl.innerHTML = "Plays : "+res.value;
+		fetch('https://api.countapi.xyz/update/minigamewrld.com_bloxorz/plays/?amount=1').then(res => res.json()).then(res => {countEl.innerHTML = "Plays : "+res.value;
 			});
 		}
 </script>
@@ -66,11 +66,11 @@
 </div>
 
 <div class = "center">
-	
+	<div align="center"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="gameObj" width="640" height="480"><param name="movie" value="http://www.ggkit.com/Content/File/4194/bloxorz.swf"><embed src="http://www.ggkit.com/Content/File/4194/bloxorz.swf" width="640" height="480"></embed></object><br></div>
 	
 </div>
 <div id = "devName">
-	<p>Developed by: </p>
+	<p>Developed by: AddictingGames</p>
 	<p id = "count">0</p>
 </div>
 
